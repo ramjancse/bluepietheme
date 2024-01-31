@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Blue Pie Meta</title>
+    <link rel="stylesheet" href="./styles/artist-output.css" />
+  </head>
+  <body class="font-ralewayRegular">
+    <header>
+      <div class="flex items-center overflow-hidden">
+        <div class="flex w-1/6 flex-col items-center">
+          <a
+            href="/"
+            class="flex flex-col items-center hover:font-medium hover:text-fill"
+          >
+            <img
+              class="-mb-2 w-20"
+              src="./assets/images/logo.png"
+              alt="Logo Image"
+            />
+            <span class="font-ralewayMedium text-[10px]">Blue Pie Meta</span>
+          </a>
+        </div>
+
+        <div class="flex h-[87px] w-5/6 items-center">
+          <nav class="w-3/5">
+            <ul class="font-ralewayMedium flex text-lg text-primary">
+              <li class="ml-3 text-center">
+                <a href="/" class="px-3 hover:font-medium hover:text-fill"
+                  >Songs</a
+                >
+              </li>
+
+              <li class="text-center">
+                <a href="/" class="px-3 hover:font-medium hover:text-fill"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="w-2/5">
+            <ul class="flex justify-end">
+              <li class="relative">
+                <i
+                  class="fa-solid fa-magnifying-glass absolute left-3 top-[9px] z-20 text-primary"
+                ></i>
+                <input
+                  class="relative z-10 rounded-full bg-gray-200 px-8 py-1 font-ralewayRegular"
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search Song"
+                />
+              </li>
+
+              <li class="ml-4">
+                <a href="/dist/index.html">
+                  <img
+                    src="./assets/images/main_banner.jpg"
+                    class="w-7 rounded-full"
+                    alt="Profile Image"
+                  />
+                </a>
+              </li>
+
+              <li class="ml-2 mr-4">
+                <a href="/dist/index.html">
+                  <i class="fa-solid fa-bars text-2xl text-primary"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="intro">
+        <img
+          class="h-36 w-full object-cover sm:h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
+          src="./assets/images/main_banner.jpg"
+          alt="Intro Image"
+        />
+      </div>
+
+      <div class="info">
+        <h3 class="py-2 text-center text-xl font-bold">Artist Info</h3>
+
+        <div
+          class="artist mx-10 flex flex-col-reverse items-center bg-gray-200 px-3 py-3 lg:flex-row lg:justify-between lg:p-10 xl:p-16 2xl:px-24 2xl:py-20"
+        >
+          <div class="input-area mt-5 lg:mt-0">
+            <div class="sm:flex">
+              <div class="label hidden sm:block sm:w-1/3">
+                <label
+                  for="artistName"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Artist Name</label
+                >
+              </div>
+
+              <div class="input mt-2 sm:ml-2 sm:mt-0 sm:w-2/3">
+                <input
+                  type="text"
+                  name="artistName"
+                  id="artistName"
+                  placeholder="Artist Name"
+                  class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="fullName"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Full Name</label
+                >
+              </div>
+
+              <div class="input sm:ml-2 sm:w-2/3">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  placeholder="Full Name"
+                  class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="genre"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Genre</label
+                >
+              </div>
+
+              <div class="input text-gray-500 sm:ml-2 sm:w-2/3">
+                <select
+                  name="genre"
+                  id="genre"
+                  class="block w-full rounded border-none px-5 py-[0.6rem] focus:outline-none"
+                >
+                  <option value="">Artist's Music Genre</option>
+                  <option value="folk">Folk</option>
+                  <option value="indie">Indie Song</option>
+                  <option value="abc">Abc Song</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="mood"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Mood</label
+                >
+              </div>
+
+              <div class="input text-gray-500 sm:ml-2 sm:w-2/3">
+                <select
+                  name="mood"
+                  id="mood"
+                  class="w-full rounded border-none px-5 py-[0.6rem] focus:outline-none"
+                >
+                  <option value="">Artist's Music Mood</option>
+                  <option value="folk">Folk</option>
+                  <option value="indie">Indie Song</option>
+                  <option value="abc">Abc Song</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="address"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Address</label
+                >
+              </div>
+
+              <div class="input sm:ml-2 sm:w-2/3">
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Address"
+                  class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="country"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Country</label
+                >
+              </div>
+
+              <div class="input sm:ml-2 sm:w-2/3">
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="Country"
+                  class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="phoneNumber"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Phone Number</label
+                >
+              </div>
+
+              <div class="input flex sm:ml-2 sm:w-2/3">
+                <div class="leftSide w-[30%]">
+                  <input
+                    type="text"
+                    name="areaCode"
+                    id="areaCode"
+                    placeholder="Area Code"
+                    class="w-full rounded border-none px-2 py-2 focus:outline-none"
+                  />
+                </div>
+
+                <div class="rightSide ml-1 w-[70%]">
+                  <input
+                    type="text"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    placeholder="Phone Number"
+                    class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="email"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Email Address</label
+                >
+              </div>
+
+              <div class="input sm:ml-2 sm:w-2/3">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  class="w-full rounded border-none px-5 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 sm:flex">
+              <div class="label hidden w-1/3 sm:block">
+                <label
+                  for="coverPic"
+                  class="block cursor-pointer rounded bg-white px-5 py-2 font-semibold"
+                  >Cover Photo</label
+                >
+              </div>
+
+              <div class="input sm:ml-2 sm:w-2/3">
+                <label
+                  for="coverPic"
+                  class="hidden w-full cursor-pointer rounded bg-fill px-5 py-2 text-center font-semibold tracking-widest text-white sm:block"
+                >
+                  Upload File
+                </label>
+
+                <label
+                  for="coverPic"
+                  class="block w-full cursor-pointer rounded bg-fill px-5 py-2 text-center font-semibold tracking-widest text-white sm:hidden"
+                >
+                  Upload Cover Photo
+                </label>
+
+                <input
+                  type="file"
+                  name="coverPic"
+                  id="coverPic"
+                  class="hidden"
+                  accept="image/png, image/gif, image/jpeg, image/svg, image/jpg"
+                />
+              </div>
+            </div>
+
+            <div class="mt-12 flex justify-center">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Submit"
+                class="float-right cursor-pointer rounded bg-gray-700 px-5 py-2 font-semibold tracking-widest text-white"
+              />
+            </div>
+          </div>
+
+          <div
+            class="upload-area xs:w-[80%] p-5 sm:w-[60%] md:w-[50%] lg:w-[30%] lg:p-0 xl:w-[25%]"
+          >
+            <form>
+              <div class="w-full">
+                <div class="image">
+                  <img
+                    src="./assets/images/main_banner.jpg"
+                    class="h-full cursor-pointer rounded"
+                    alt="Profile Picture"
+                  />
+                </div>
+
+                <div class="input mt-3">
+                  <label
+                    for="profilePic"
+                    class="block w-full cursor-pointer rounded bg-fill px-5 py-2 text-center font-semibold tracking-widest text-white"
+                  >
+                    Upload Profile Photo
+                  </label>
+
+                  <input
+                    type="file"
+                    name="profilePic"
+                    id="profilePic"
+                    class="hidden"
+                    accept="image/png, image/gif, image/jpeg, image/svg, image/jpg"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="left flex flex-wrap px-10 py-6">
+        <div class="services w-1/2 sm:w-1/3 md:w-1/4">
+          <h3 class="mb-3 text-base font-semibold uppercase">
+            <span class="underline">Servic</span><span class="">es</span>
+          </h3>
+
+          <nav class="font-ralewayRegular text-xs">
+            <ul>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Song Search</a
+                >
+              </li>
+
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Subscription</a
+                >
+              </li>
+
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Single Use</a
+                >
+              </li>
+
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Custom Music</a
+                >
+              </li>
+
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill">Cover</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="about w-1/2 sm:w-1/3 md:w-1/4">
+          <h3 class="mb-3 text-base font-semibold uppercase">
+            <span class="underline">Abo</span><span class="">ut</span>
+          </h3>
+
+          <nav class="font-ralewayRegular text-xs">
+            <ul>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Our Story</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill">Films</a>
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill">TV</a>
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Playlists</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="support mt-5 w-1/2 sm:mt-0 sm:w-1/3 md:w-1/4">
+          <h3 class="mb-3 text-base font-semibold uppercase">
+            <span class="underline">Suppo</span><span class="">rt</span>
+          </h3>
+          <nav class="font-ralewayRegular text-xs">
+            <ul>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Articles</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill">FAQ</a>
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="terms mt-5 w-1/2 sm:w-1/3 md:mt-0 md:w-1/4">
+          <h3 class="mb-3 text-base font-semibold uppercase">
+            <span class="underline">Ter</span><span class="">ms</span>
+          </h3>
+
+          <nav class="font-ralewayRegular text-xs">
+            <ul>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Licensing</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="/" class="hover:font-medium hover:text-fill"
+                  >Terms of Use</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="social">
+        <nav>
+          <ul class="flex">
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-facebook-f text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-twitter text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-square-instagram text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-youtube text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-linkedin-in text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-spotify text-white"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                class="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 px-3 text-center hover:bg-fill"
+              >
+                <i class="fa-brands fa-cloudflare text-white"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="help rounded bg-gray-200 px-4 pb-7 pt-4">
+        <h1 class="text-2xl font-semibold uppercase">Need Help?</h1>
+        <h3 class="mb-10 text-sm">Let us search the right song for you</h3>
+        <form class="relative">
+          <input
+            class="relative z-10 rounded-full bg-gray-300 px-3 py-1 font-ralewayRegular"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search Song"
+          />
+        </form>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/85210039d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
